@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal - SentiMath</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-direction: column; /* Cambiado para que los botones estén en columna */
+            gap: 20px; /* Espacio entre los botones */
+            width: 80%;
+            max-width: 300px; /* Ancho máximo */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-button {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Menú Principal - SentiMath</h1>
+
+    <div class="menu-container">
+        <button class="menu-button" onclick="regresar()">Regresar</button>
+        <button class="menu-button" onclick="irAMetodoKolb()">Método de Kolb</button>
+        <button class="menu-button" onclick="irATests()">Tests</button>
+        <button class="menu-button" onclick="irAHoraDeAprender()">Hora de Aprender</button>
+        <button class="menu-button" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </div>
+
+    <script>
+        function regresar() {
+            // Enlace de regreso a la página anterior o de bienvenida
+            window.location.href = "index.html";
+        }
+
+        function irAMetodoKolb() {
+            // Enlace a la página o sección del Método de Kolb
+            window.location.href = "metodo_kolb.html";
+        }
+
+        function irATests() {
+            // Enlace a la página de Tests
+            window.location.href = "tests.html";
+        }
+
+        function irAHoraDeAprender() {
+            // Enlace a la nueva sección "Hora de Aprender"
+            window.location.href = "hora_de_aprender.html";
+        }
+
+        function cerrarSesion() {
+            // Cerrar sesión y redirigir a la página principal o de inicio
+            localStorage.removeItem("usuario");
+            alert("Sesión cerrada.");
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
