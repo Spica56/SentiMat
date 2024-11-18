@@ -4,77 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Método de Kolb</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-            text-align: center;
-        }
-        h1 {
-            color: #007BFF;
-            margin-bottom: 10px;
-        }
-        .box {
-            background-color: #e0f7ff;
-            padding: 15px;
-            border-left: 4px solid #007BFF;
-            margin: 10px 0;
-            border-radius: 5px;
-            text-align: left;
-        }
-        p, ul {
-            color: #333;
-            line-height: 1.6;
-            text-align: left;
-        }
-        ul {
-            list-style: disc;
-            margin-left: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            color: #fff;
-            background-color: #6c757d;
-            margin-top: 20px;
-        }
-        button:hover {
-            opacity: 0.9;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
+    <header>
+        <img src="media/logo_mini_b.png" alt="logo en miniatura" class="logo_m">
+        <h1>¿Qué es el método de kolb?</h1>
+    </header>
     <div class="container">
-        <h1>Método de Kolb</h1>
-        
         <!-- ¿Qué es el método de Kolb? -->
-        <div class="box">
+        <div class="kolb-iz">
             <p>
                 El método de Kolb es una forma de aprender a través de experimentar, observar, reflexionar y aplicar. 
                 Según Kolb, las personas aprenden mejor cuando practican y piensan sobre lo que hicieron.
             </p>
-        </div>
-        
-        <!-- Etapas del Ciclo de Kolb -->
-        <h2>Etapas del Ciclo de Kolb:</h2>
-        <div class="box">
-            <ul>
+            <h2 class="titulo">Etapas del Ciclo de Kolb:</h2>
+            <ul class="points">
                 <li><strong>Experiencia:</strong> Probar algo nuevo.</li>
                 <li><strong>Reflexión:</strong> Pensar en lo sucedido.</li>
                 <li><strong>Conceptualización:</strong> Comprender el porqué.</li>
@@ -83,19 +28,20 @@
         </div>
         
         <!-- Ejemplo -->
-        <div class="box">
-            <h3>Ejemplo: Usar lo aprendido</h3>
-            <p>
-                Para aprender a andar en bicicleta, primero pruebas (<strong>experiencia</strong>), 
-                piensas en cómo mejorar (<strong>reflexión</strong>), 
-                planeas cambios (<strong>conceptualización</strong>), 
-                y lo intentas de nuevo (<strong>aplicación</strong>).
-            </p>
+        <div class="kolb-de">
+            <img src="media/Kolb.jpeg" alt="foto de kolb" class="img-kolb">
+            <div class="kolb-de-text">
+                <h3 class="titulo">Ejemplo: Usar lo aprendido</h3>
+                <p>
+                    Para aprender a andar en bicicleta, primero pruebas (<strong>experiencia</strong>), 
+                    piensas en cómo mejorar (<strong>reflexión</strong>),
+                    planeas cambios (<strong>conceptualización</strong>),
+                    y lo intentas de nuevo (<strong>aplicación</strong>).
+                </p>
+            </div>
         </div>
-        
-        <button onclick="regresar()">Regresar al Menú Principal</button>
     </div>
-
+    <button class="regresar", onclick="regresar()">Regresar</button>
     <script>
         function regresar() {
             // Redirige a la página principal o menú

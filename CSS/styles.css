@@ -194,3 +194,55 @@ header .logo_m {
     background-color: #C0C0C0;
     transform: scale(1.05);
 }
+
+/* Metodo de kolb */
+
+.kolb-iz {
+    background-color: #FFE9EB;
+    border: 1px solid #EED8DA;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    margin: auto;
+    height: auto;
+    text-align: justify;
+}
+
+.kolb-de {
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    max-width: 52%;
+    height: auto;
+}
+
+.img-kolb {
+    background-color: #FFE9EB;
+    border: 1px solid #EED8DA;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 25%;
+    margin: 5px;
+}
+
+.kolb-de-text {
+    background-color: #FFE9EB;
+    border: 1px solid #EED8DA;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    height: auto;
+    text-align: justify;
+}
+
+.points {
+    text-align: start;
+}
+
+.titulo {
+    text-align: center;
+}
