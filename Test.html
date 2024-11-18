@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            color: #555;
+        }
+
+        .answers {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .answers input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .answers label {
+            display: inline-block;
+            margin-bottom: 8px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test</h1>
+        <form id="test-form">
+            <!-- Pregunta 1 -->
+            <div class="question">
+                <label for="question1">Cuando ante un problema debo dar una solución u obtener un resultado urgente, ¿Cómo me comporto?</label>
+                <div class="answers">
+                    <input type="radio" name="question1" value="Soy selectivo" id="selectivo">
+                    <label for="selectivo">1. Soy selectivo</label><br>
+                    <input type="radio" name="question1" value="Intento acciones" id="acciones">
+                    <label for="acciones">2. Intento acciones</label><br>
+                    <input type="radio" name="question1" value="Me intereso" id="intereso">
+                    <label for="intereso">3. Me intereso</label><br>
+                    <input type="radio" name="question1" value="Soy muy práctico" id="practico">
+                    <label for="practico">4. Soy muy práctico</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="question">
+                <label for="question2">Al encontrarme con una realidad nueva, ¿Cómo soy?</label>
+                <div class="answers">
+                    <input type="radio" name="question2" value="Soy respectivo" id="respectivo">
+                    <label for="respectivo">1. Soy respectivo</label><br>
+                    <input type="radio" name="question2" value="Soy realista y especifico" id="realista">
+                    <label for="realista">2. Soy realista y específico</label><br>
+                    <input type="radio" name="question2" value="Soy analítico" id="analitico">
+                    <label for="analitico">3. Soy analítico</label><br>
+                    <input type="radio" name="question2" value="Soy imparcial" id="imparcial">
+                    <label for="imparcial">4. Soy imparcial</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="question">
+                <label for="question3">Frente a un suceso, ¿Cómo reacciono?</label>
+                <div class="answers">
+                    <input type="radio" name="question3" value="Me involucro emocionalmente" id="emocionalmente">
+                    <label for="emocionalmente">1. Me involucro emocionalmente</label><br>
+                    <input type="radio" name="question3" value="Soy un mero observador" id="observador">
+                    <label for="observador">2. Soy un mero observador</label><br>
+                    <input type="radio" name="question3" value="Pienso una explicación" id="explicacion">
+                    <label for="explicacion">3. Pienso una explicación</label><br>
+                    <input type="radio" name="question3" value="Me pongo en acción" id="accion">
+                    <label for="accion">4. Me pongo en acción</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="question">
+                <label for="question4">Ante los cambios, ¿Cómo soy?</label>
+                <div class="answers">
+                    <input type="radio" name="question4" value="Los acepto bien dispuesto" id="acepto">
+                    <label for="acepto">1. Los acepto bien dispuesto</label><br>
+                    <input type="radio" name="question4" value="Me arriesgo" id="arriesgo">
+                    <label for="arriesgo">2. Me arriesgo</label><br>
+                    <input type="radio" name="question4" value="Soy cuidadoso" id="cuidadoso">
+                    <label for="cuidadoso">3. Soy cuidadoso</label><br>
+                    <input type="radio" name="question4" value="Soy consciente y realista" id="consciente">
+                    <label for="consciente">4. Soy consciente y realista</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="question">
+                <label for="question5">Frente a las incoherencias, ¿Cómo soy?</label>
+                <div class="answers">
+                    <input type="radio" name="question5" value="Actúo intuitivamente" id="intuitivamente">
+                    <label for="intuitivamente">1. Actúo intuitivamente</label><br>
+                    <input type="radio" name="question5" value="Hago propuestas" id="propuestas">
+                    <label for="propuestas">2. Hago propuestas</label><br>
+                    <input type="radio" name="question5" value="Me comporto lógicamente" id="logicamente">
+                    <label for="logicamente">3. Me comporto lógicamente</label><br>
+                    <input type="radio" name="question5" value="Soy inquisitivo" id="inquisitivo">
+                    <label for="inquisitivo">4. Soy inquisitivo</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="question">
+                <label for="question6">En relación con mi punto de vista, ¿Cómo soy?</label>
+                <div class="answers">
+                    <input type="radio" name="question6" value="Soy abstracto" id="abstracto">
+                    <label for="abstracto">1. Soy abstracto</label><br>
+                    <input type="radio" name="question6" value="Soy observador" id="observador2">
+                    <label for="observador2">2. Soy observador</label><br>
+                    <input type="radio" name="question6" value="Soy concreto" id="concreto">
+                    <label for="concreto">3. Soy concreto</label><br>
+                    <input type="radio" name="question6" value="Soy activo" id="activo">
+                    <label for="activo">4. Soy activo</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="question">
+                <label for="question7">En la utilización del tiempo, ¿Cómo soy?</label>
+                <div class="answers">
+                    <input type="radio" name="question7" value="Me proyecto en el presente" id="presente">
+                    <label for="presente">1. Me proyecto en el presente</label><br>
+                    <input type="radio" name="question7" value="Soy reflexivo" id="reflexivo">
+                    <label for="reflexivo">2. Soy reflexivo</label><br>
+                    <input type="radio" name="question7" value="Me proyecto hacia el futuro" id="futuro">
+                    <label for="futuro">3. Me proyecto hacia el futuro</label><br>
+                    <input type="radio" name="question7" value="Soy pragmático" id="pragmatico">
+                    <label for="pragmatico">4. Soy pragmático</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="question">
+                <label for="question8">En un proceso considero más importante:</label>
+                <div class="answers">
+                    <input type="radio" name="question8" value="La experiencia" id="experiencia">
+                    <label for="experiencia">1. La experiencia</label><br>
+                    <input type="radio" name="question8" value="La observación" id="observacion">
+                    <label for="observacion">2. La observación</label><br>
+                    <input type="radio" name="question8" value="La conceptualización" id="conceptualizacion">
+                    <label for="conceptualizacion">3. La conceptualización</label><br>
+                    <input type="radio" name="question8" value="La experimentación" id="experimentacion">
+                    <label for="experimentacion">4. La experimentación</label><br>
+                </div>
+            </div>
+
+            <!-- Botón de envío -->
+            <button type="submit" class="btn">Enviar respuestas</button>
+        </form>
+    </div>
+</body>
+</html>
