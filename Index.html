@@ -3,26 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Sentimat - Inicio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Conexión con CSS -->
 </head>
 <body>
-    <header class="vacio">
-        <img src="media/logo_mini_b.png" alt="Logo en miniatura" class="logo_m">
-    </header>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Encabezado con el logo -->
+        <header>
+            <img src="imaguenes/logo.png.jpg" alt="Logo de Sentimat" class="logo">
+        </header>
 
-    <main class="main-container">
-        <img src="media/logo_grande.png" alt="Logo en grande" class="logo_g">
-        <div class="contenido">
-            <img src="media/kid-studyng.png" alt="Niño estudiando" class="imagen_kid">
-            <div class="bienvenida">
-                <h2>Bienvenido</h2>
-                <p>¿Eres nuevo?</p>
-                <button class="boton">Registrarse</button>
-                <p>¿Ya tienes una cuenta?</p>
-                <button class="boton">Iniciar sesión</button>
+        <!-- Sección principal -->
+        <main>
+            <img src="imaguenes/logo2.png.jpg" alt="Imagen de un niño" class="imagen-principal"> <!-- Imagen central -->
+
+            <div class="texto">
+                <h1>
+                    <span style="color: rgb(160, 216, 238);">S</span>
+                    <span style="color: pink;">e</span>
+                    <span style="color: orange;">n</span>
+                    <span style="color: green;">t</span>
+                    <span style="color: rgb(255, 253, 132);">i</span>
+                    <span style="color: rgb(94, 3, 122);">m</span>
+                    <span style="color: rgb(30, 90, 77);">a</span>
+                    <span style="color: rgb(255, 72, 0);">t</span>
+                </h1> <!-- Nombre de la aplicación -->
+
+                <p class="bienvenida">¡Bienvenido a Sentimat!</p> <!-- Mensaje de bienvenida -->
+
+                <p class="mensaje">¿Eres nuevo?:</p>
+                <a href="paguinas/registro.html" class="btn">Registrate</a> <!-- Botón de Registro -->
+
+                <p class="mensaje">¿Ya tienes cuenta?</p>
+                <a href="paguinas/iniciar-sesion.html" class="btn">Iniciar Sesión</a> <!-- Botón de Inicio de Sesión -->
             </div>
-        </div>
-    </main>
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>© 2025 Sentimat. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #A1CEF4;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Título */
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Estilo para la respuesta */
+.respuesta {
+    font-size: 1.2em;
+    color: #333;
+    margin: 20px 0;
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para los botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF914D; /* Naranja */
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #E87A3D; /* Naranja más oscuro al pasar el cursor */
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #A1CEF4;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 0 0 10px 10px;
+}

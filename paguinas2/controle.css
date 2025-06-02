@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    text-align: center; /* Centra el contenido */
+    background-color: #f4f4f4; /* Color de fondo */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina rellenos predeterminados */
+}
+
+header {
+    background-color: #4CAF50; /* Color del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    padding: 15px; /* Relleno en el encabezado */
+    display: flex; /* Para alinear el logo y el título */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.logo {
+    height: 50px; /* Tamaño del logo */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+.container {
+    background: white; /* Color de fondo del contenedor */
+    padding: 20px; /* Relleno del contenedor */
+    width: 80%; /* Ancho del contenedor */
+    max-width: 600px; /* Ancho máximo */
+    margin: 30px auto; /* Margen automático para centrar */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+h2, h3 {
+    color: #333; /* Color de los títulos */
+}
+
+ul {
+    list-style-type: none; /* Quitar viñetas de la lista */
+    padding: 0; /* Quitar relleno */
+}
+
+.emoji {
+    width: 80px; /* Tamaño de la imagen de la sugerencia */
+    vertical-align: middle; /* Alineación vertical */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+button {
+    background-color: #4CAF50; /* Color del botón */
+    color: white; /* Color del texto en el botón */
+    padding: 10px 15px; /* Relleno interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin: 10px; /* Margen entre botones */
+}
+
+button:hover {
+    background-color: #45a049; /* Color del botón al pasar el cursor */
+}

@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Encabezado con el logo */
+header {
+    background-color: #A1CEF4;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Sección principal */
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Título */
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Imagen central */
+.imagen-principal {
+    width: 60%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos de los botones */
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+/* Botón Matemáticas */
+.matematicas {
+    background-color: #f03a3d;
+}
+
+.matematicas:hover {
+    background-color: #b12828;
+}
+
+/* Botón Emociones */
+.emociones {
+    background-color: #C63BE1;
+}
+
+.emociones:hover {
+    background-color: #7c0b80;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #A1CEF4;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 0 0 10px 10px;
+}

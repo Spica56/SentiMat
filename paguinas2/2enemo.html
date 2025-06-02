@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Emociones</title>
+    <link rel="stylesheet" href="enemo.css">
+</head>
+<body>
+    <header>
+        <img src="imagen/logo.png.jpg" alt="Logo de Sentimat" class="logo">
+        <h1>Cuestionario de Emociones</h1>
+    </header>
+
+    <div class="container">
+        <h2>Instrucciones</h2>
+        <p>Marca la respuesta que mejor describa lo que sientes en este momento.</p>
+
+        <form id="form-emociones">
+            <div id="preguntas-container">
+                <!-- Preguntas -->
+                <h3>1. ¿Cómo me siento hoy?</h3>
+                <label><input type="checkbox" name="p1" value="1"> Tranquilo/a y relajado/a.</label>
+                <label><input type="checkbox" name="p1" value="3"> Un poco nervioso/a o inquieto/a.</label>
+                <label><input type="checkbox" name="p1" value="5"> Muy preocupado/a o con miedo.</label>
+                <label><input type="checkbox" name="p1" value="5"> Triste o desmotivado/a.</label>
+                <label><input type="checkbox" name="p1" value="5"> Enojado/a o frustrado/a.</label>
+                <label><input type="checkbox" name="p1" value="3"> Me siento solo/a o incomprendido/a.</label>
+
+                <h3>2. ¿Cómo se siente mi cuerpo en este momento?</h3>
+                <label><input type="checkbox" name="p2" value="5"> Mi corazón late rápido.</label>
+                <label><input type="checkbox" name="p2" value="5"> Me sudan las manos.</label>
+                <label><input type="checkbox" name="p2" value="3"> Tengo dolor de cabeza o de estómago.</label>
+                <label><input type="checkbox" name="p2" value="3"> Siento un nudo en la garganta.</label>
+                <label><input type="checkbox" name="p2" value="1"> Me siento cansado/a o sin energía.</label>
+                <label><input type="checkbox" name="p2" value="1"> Me siento inquieto/a y no puedo quedarme quieto/a.</label>
+                <label><input type="checkbox" name="p2" value="0"> No siento nada raro en mi cuerpo.</label>
+
+                <h3>3. ¿Cómo podría expresar lo que siento en palabras?</h3>
+                <label><input type="checkbox" name="p3" value="3"> Me cuesta decir lo que me pasa.</label>
+                <label><input type="checkbox" name="p3" value="3"> Siento que nadie me entiende.</label>
+                <label><input type="checkbox" name="p3" value="5"> Tengo ganas de gritar o llorar.</label>
+                <label><input type="checkbox" name="p3" value="3"> Me gustaría hablar con alguien, pero no sé cómo empezar.</label>
+                <label><input type="checkbox" name="p3" value="3"> Prefiero no hablar y estar solo/a.</label>
+                <label><input type="checkbox" name="p3" value="1"> No tengo problema en hablar de mis emociones.</label>
+
+                <h3>4. ¿En qué parte del cuerpo siento más mis emociones?</h3>
+                <label><input type="checkbox" name="p4" value="3"> En el pecho, como presión o palpitaciones.</label>
+                <label><input type="checkbox" name="p4" value="3"> En la garganta, como un nudo o dificultad para hablar.</label>
+                <label><input type="checkbox" name="p4" value="3"> En el estómago, como un vacío o dolor.</label>
+                <label><input type="checkbox" name="p4" value="3"> En la cabeza, con tensión o dolor.</label>
+                <label><input type="checkbox" name="p4" value="3"> En las manos o piernas, con temblores o sudoración.</label>
+                <label><input type="checkbox" name="p4" value="1"> No siento nada raro en mi cuerpo.</label>
+
+                <h3>5. Cuando tengo miedo, siento que:</h3>
+                <label><input type="checkbox" name="p5" value="5"> Mi piel se pone chinita o me dan escalofríos.</label>
+                <label><input type="checkbox" name="p5" value="5"> Mi corazón late rápido y siento que me falta el aire.</label>
+                <label><input type="checkbox" name="p5" value="3"> Mi garganta se cierra y me cuesta hablar.</label>
+                <label><input type="checkbox" name="p5" value="3"> Siento presión en el pecho o ganas de salir corriendo.</label>
+                <label><input type="checkbox" name="p5" value="3"> Tengo un nudo en el estómago o ganas de vomitar.</label>
+                <label><input type="checkbox" name="p5" value="1"> No me pasa nada de esto.</label>
+
+                <h3>6. Cuando me enojo:</h3>
+                <label><input type="checkbox" name="p6" value="5"> Mi cara o mis orejas se ponen calientes.</label>
+                <label><input type="checkbox" name="p6" value="5"> Aprieto mis puños o mi mandíbula.</label>
+                <label><input type="checkbox" name="p6" value="3"> Quiero gritar o romper cosas.</label>
+                <label><input type="checkbox" name="p6" value="3"> Lloro porque me siento muy frustrado.</label>
+                <label><input type="checkbox" name="p6" value="1"> No me pasa nada de esto.</label>
+
+                <h3>7. Cuando me siento triste:</h3>
+                <label><input type="checkbox" name="p7" value="3"> No tengo ganas de hacer nada.</label>
+                <label><input type="checkbox" name="p7" value="5"> Me dan ganas de llorar aunque no sepa por qué.</label>
+                <label><input type="checkbox" name="p7" value="3"> Me siento cansado o con poca energía.</label>
+                <label><input type="checkbox" name="p7" value="3"> Prefiero estar solo y no hablar con nadie.</label>
+                <label><input type="checkbox" name="p7" value="1"> No me pasa nada de esto.</label>
+
+                <h3>8. Cuando me siento muy estresado:</h3>
+                <label><input type="checkbox" name="p8" value="5"> Me duele la cabeza o la panza sin razón aparente.</label>
+                <label><input type="checkbox" name="p8" value="3"> Me cuesta concentrarme en lo que estoy haciendo.</label>
+                <label><input type="checkbox" name="p8" value="3"> No duermo bien o me despierto muchas veces en la noche.</label>
+                <label><input type="checkbox" name="p8" value="3"> Me pongo de mal humor o me irrito con facilidad.</label>
+                <label><input type="checkbox" name="p8" value="1"> No me pasa nada de esto.</label>
+
+                <h3>9. Cuando me siento solo o aislado:</h3>
+                <label><input type="checkbox" name="p9" value="5"> Siento que nadie me entiende o que a nadie le importo.</label>
+                <label><input type="checkbox" name="p9" value="3"> No quiero hablar con nadie y prefiero estar solo.</label>
+                <label><input type="checkbox" name="p9" value="3"> Me siento triste sin razón.</label>
+                <label><input type="checkbox" name="p9" value="3"> Pienso que no tengo amigos o que nadie me quiere cerca.</label>
+                <label><input type="checkbox" name="p9" value="1"> No me pasa nada de esto.</label>
+
+                <h3>10. ¿Te gustaría contar algo sobre cómo te sientes? (Opcional)</h3>
+                <textarea name="comentario" rows="4" placeholder="Escribe aquí..."></textarea>
+            </div>
+
+            <button type="button" onclick="calcularEmocion()">Enviar</button>
+        </form>
+
+        <div id="resultado" style="display: none;">
+            <h3>Tu estado emocional es:</h3>
+            <p id="mensaje-resultado"></p>
+            <button onclick="window.location.href='controle.html'">Aprender más</button>
+        </div>
+    </div>
+
+    <script>
+        function calcularEmocion() {
+            let total = 0;
+            let opcionesSeleccionadas = document.querySelectorAll('input[type="checkbox"]:checked');
+
+            opcionesSeleccionadas.forEach(opcion => {
+                total += parseInt(opcion.value);
+            });
+            window.location.href = `controle.html?puntaje=${total}`;
+            let mensaje = "";
+            if (total >= 0 && total <= 10) {
+                mensaje = "Tristeza leve.";
+            } else if (total <= 20) {
+                mensaje = "Soledad.";
+            } else if (total <= 30) {
+                mensaje = "Estrés moderado.";
+            } else if (total <= 40) {
+                mensaje = "Miedo e inseguridad.";
+            } else {
+                mensaje = "Ansiedad alta.";
+            }
+
+            document.getElementById("mensaje-resultado").textContent = mensaje;
+            document.getElementById("form-emociones").style.display = "none";
+            document.getElementById("resultado").style.display = "block";
+        }
+    </script>
+</body>
+</html>

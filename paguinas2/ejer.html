@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Multiplicación</title>
+    <link rel="stylesheet" href="ejer.css">
+</head>
+<body>
+    <header>
+        <img src="imagen/logo.png.jpg" alt="Logo de Sentimat" class="logo">
+        <h1>Multiplicaciones</h1>
+    </header>
+
+    <div class="container">
+        <h2>Resuelve el siguiente ejercicio:</h2>
+        <p id="pregunta"></p>
+        
+        <input type="number" id="respuesta" placeholder="Escribe tu respuesta">
+        <button onclick="verificarRespuesta()">Verificar</button>
+        
+        <p id="mensaje"></p>
+
+        <div class="botones">
+            <button id="btn-explicar" onclick="volverAExplicar()">Volver a Explicar</button>
+            <button id="btn-siguiente" onclick="siguienteEjercicio()" style="display: none;">Siguiente</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Sentimat. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const ejercicios = [
+            { pregunta: "3 × 2 =", respuesta: 6 },
+            { pregunta: "5 × 4 =", respuesta: 20 },
+            { pregunta: "7 × 3 =", respuesta: 21 }
+        ];
+        
+        let indiceActual = 0;
+
+        function cargarEjercicio() {
+            document.getElementById("pregunta").textContent = ejercicios[indiceActual].pregunta;
+            document.getElementById("respuesta").value = "";
+            document.getElementById("mensaje").textContent = "";
+            document.getElementById("btn-siguiente").style.display = "none";
+        }
+
+        function verificarRespuesta() {
+            const respuestaUsuario = parseInt(document.getElementById("respuesta").value);
+            const respuestaCorrecta = ejercicios[indiceActual].respuesta;
+
+            if (respuestaUsuario === respuestaCorrecta) {
+                document.getElementById("mensaje").textContent = "✅ ¡Correcto!";
+                document.getElementById("btn-siguiente").style.display = "inline-block";
+            } else {
+                document.getElementById("mensaje").textContent = "❌ Inténtalo de nuevo.";
+            }
+        }
+
+        function siguienteEjercicio() {
+            if (indiceActual < ejercicios.length - 1) {
+                indiceActual++;
+                cargarEjercicio();
+            } else {
+                window.location.href = "seleccion.html"; // Redirige a la selección de temas
+            }
+        }
+
+        function volverAExplicar() {
+            window.location.href = "mete1.html";
+        }
+
+        cargarEjercicio(); // Cargar el primer ejercicio al iniciar
+    </script>
+</body>
+</html>

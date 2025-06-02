@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px; /* Aumenté el ancho para mejor distribución */
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #A1CEF4; /* Color de fondo del encabezado */
+    padding: 10px 20px;
+    display: flex; /* Alineación flexible */
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-start; /* Alinea a la izquierda */
+}
+
+.logo {
+    width: 80px; /* Tamaño más pequeño del logo */
+    height: auto;
+    margin-left: 10px; /* Margen para separarlo del borde */
+}
+
+/* Diseño de la sección principal con flexbox */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Imagen alineada a la izquierda */
+.imagen-principal {
+    width: 45%;
+    max-width: 300px;
+}
+
+/* Contenedor de texto para mejor alineación */
+.texto {
+    width: 50%;
+    text-align: left;
+}
+
+/* Título de la aplicación */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Mensajes */
+.bienvenida {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mensaje {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #D9D9D9; /* Azul */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c4c1c1; /* Azul oscuro al pasar el cursor */
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #A1CEF4;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 0 0 10px 10px;
+}

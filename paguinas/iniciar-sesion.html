@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Sentimat</title>
+    <link rel="stylesheet" href="style-sesion.css"> <!-- Archivo CSS para estilos -->
+</head>
+<body>
+    <header>
+        <img src="imagen/logo.png.jpg" alt="Logo de Sentimat" class="logo">
+        <h1>Sentimat</h1>
+    </header>
+
+    <div class="container">
+        <h1>Iniciar Sesión</h1>
+        <form id="login-form" onsubmit="validarSesion(event)">
+            <label for="usuario">Nombre de Usuario:</label>
+            <input type="text" id="usuario" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Ingresar</button>
+        </form>
+
+        <div id="mensaje-error" style="display: none;">
+            <p>❌ Usuario o contraseña incorrectos</p>
+            <button onclick="intentarDeNuevo()">Intentar de nuevo</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Sentimat. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Simulación de credenciales válidas
+        const usuarioCorrecto = "admin";
+        const passwordCorrecta = "12345678";
+
+        function validarSesion(event) {
+            event.preventDefault(); // Evita el envío del formulario
+
+            // Obtiene los valores ingresados
+            const usuarioIngresado = document.getElementById("usuario").value;
+            const passwordIngresada = document.getElementById("password").value;
+
+            if (usuarioIngresado === usuarioCorrecto && passwordIngresada === passwordCorrecta) {
+                alert("✅ Inicio de sesión exitoso");
+                window.location.href = "../paguinas2/seleccion.html"; // Redirige a otra página (ajústala a tu necesidad)
+            } else {
+                // Muestra el mensaje de error
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("mensaje-error").style.display = "block";
+            }
+        }
+
+        function intentarDeNuevo() {
+            // Reinicia el formulario
+            document.getElementById("login-form").style.display = "flex";
+            document.getElementById("mensaje-error").style.display = "none";
+            document.getElementById("usuario").value = "";
+            document.getElementById("password").value = "";
+        }
+        
+    </script>
+</body>
+</html>
