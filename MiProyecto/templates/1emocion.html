@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentimat - Emociones</title>
+    <style>
+        /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #A1CEF4;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Sección principal */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen alineada a la izquierda */
+.imagen-principal {
+    width: 40%;
+    max-width: 300px;
+}
+
+/* Contenedor de texto */
+.texto {
+    width: 55%;
+    text-align: left;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    color: #1f124b;
+    margin-bottom: 10px;
+}
+
+/* Mensaje */
+.mensaje {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: rgb(27, 27, 25);
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #fdba63; /* Naranja */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #E87A3D; /* Naranja más oscuro al pasar el cursor */
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #A1CEF4;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 0 0 10px 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado con el logo -->
+        <header>
+            <img src="imagen/logo.png.jpg" alt="Logo de Sentimat" class="logo">
+        </header>
+
+        <!-- Sección principal -->
+        <main>
+            <img src="imagen/mons3.png.jpg" alt="Imagen de emociones" class="imagen-principal"> <!-- Imagen ilustrativa -->
+            
+            <div class="texto">
+                <h1>Emociones</h1> <!-- Título -->
+                <p class="mensaje">
+                    En esta materia aprenderemos y desarrollaremos nuestras emociones que vivimos cada día, 
+                    para que nosotros sepamos cómo nos sentimos y cómo saber actuar en esas situaciones.
+                </p>
+                <a href="{{ url_for('test') }}" class="btn">Comenzar</a> <!-- Botón para iniciar -->
+            </div>
+        </main>
+        
+        <!-- Pie de página -->
+        <footer>
+            <p>© 2025 Sentimat. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentimat - Matemáticas</title>
+    <link rel="stylesheet" href="mate.css"> <!-- Conexión con CSS -->
+
+    <style>
+        /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Encabezado con el logo */
+header {
+    background-color: #A1CEF4;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Título */
+h1 {
+    font-size: 2em;
+    color: #1a3775;
+    margin: 20px 0;
+}
+
+/* Contenedor de niveles */
+.niveles {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilos generales de cada nivel */
+.nivel {
+    width: 20%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del título de cada nivel */
+.nivel h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Botones */
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+/* Colores según nivel */
+.basico h2 { color: #083f52; }
+.basico .btn { background-color: #b1d7f3; }
+.basico .btn:hover { background-color: #016CBC; }
+
+.medio h2 { color: #be872e; }
+.medio .btn { background-color: #f8de92; }
+.medio .btn:hover { background-color: #F2F1A1; }
+
+.avanzado h2 { color: #501c66; }
+.avanzado .btn { background-color: #c08fd6; }
+.avanzado .btn:hover { background-color: #AF69CD; }
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #A1CEF4;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 0 0 10px 10px;
+}
+
+    </style>
+
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Encabezado con el logo -->
+        <header>
+            <img src="imagen/logo.png.jpg" alt="Logo de Sentimat" class="logo">
+        </header>
+
+        <!-- Título -->
+        <h1>Selecciona un nivel de matemáticas</h1>
+
+        <!-- Contenedor de niveles -->
+        <div class="niveles">
+            <!-- Nivel Básico -->
+            <div class="nivel basico">
+                <h2>Básico</h2>
+                <a href="{{ url_for('mate_suma') }}" class="btn">Sumas</a>
+                <a href="{{ url_for('mate_resta') }}" class="btn">Restas</a>
+                <a href="{{ url_for('mate_e_m') }}" class="btn">Multiplicaciones</a>
+                <a href="{{ url_for('mate_div') }}" class="btn">Divisiones</a>
+                <a href="pages/fracciones.html" class="btn">Fracciones</a>
+            </div>
+
+            <!-- Nivel Medio -->
+            <div class="nivel medio">
+                <h2>Medio</h2>
+                <a href="pages/proporciones.html" class="btn">Proporciones</a>
+                <a href="pages/geometria.html" class="btn">Geometría</a>
+                <a href="pages/decimales.html" class="btn">Decimales</a>
+                <a href="pages/unidades-medida.html" class="btn">Unidades de Medida</a>
+                <a href="pages/porcentajes.html" class="btn">Porcentajes</a>
+            </div>
+
+            <!-- Nivel Avanzado -->
+            <div class="nivel avanzado">
+                <h2>Avanzado</h2>
+                <a href="pages/ecuaciones.html" class="btn">Ecuaciones</a>
+                <a href="pages/funciones.html" class="btn">Funciones</a>
+                <a href="pages/triangulos.html" class="btn">Triángulos</a>
+                <a href="pages/probabilidad.html" class="btn">Probabilidad</a>
+                <a href="pages/estadistica.html" class="btn">Estadística</a>
+            </div>
+        </div>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>© 2025 Sentimat. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

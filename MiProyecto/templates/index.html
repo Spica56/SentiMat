@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sentimat - Bienvenido</title>
+        <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            background-color: #cde6f7;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .titulo-colorido {
+            font-size: 48px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .titulo-colorido span.s { color: #fce388; }
+        .titulo-colorido span.e { color: #f8b8b8; }
+        .titulo-colorido span.n { color: #f8b8b8; }
+        .titulo-colorido span.t { color: #f8b8b8; }
+        .titulo-colorido span.i { color: #a3c9f9; }
+        .titulo-colorido span.m { color: #a3c9f9; }
+        .titulo-colorido span.a { color: #b9e4c9; }
+        .titulo-colorido span.t2 { color: #b9e4c9; }
+
+        .bienvenido {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .contenido {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .imagen-nino {
+            width: 250px;
+        }
+
+        .acciones {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .acciones button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            background-color: #dddddd;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .acciones button:hover {
+            background-color: #cccccc;
+        }
+
+        .eliminar-cuenta {
+            font-size: 14px;
+            color: #555555;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .eliminar-cuenta:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #cde6f7;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="{{ url_for('static', filename='imagen/logo.png.jpg') }}" alt="Logo de Sentimat" class="logo" />
+    </header>
+
+    <main class="container">
+        <h1 class="titulo-colorido">
+            <span class="s">S</span><span class="e">E</span><span class="n">N</span><span class="t">T</span>
+            <span class="i">I</span><span class="m">M</span><span class="a">A</span><span class="t2">T</span>
+        </h1>
+        <h2 class="bienvenido">Bienvenido</h2>
+
+        <div class="contenido">
+            <img src="{{ url_for(') }}" alt="Niño escribiendo" class="imagen-nino" />
+            <div class="acciones">
+                <p>¿Eres nuevo?</p>
+
+                <a href="{{ url_for('registro_tutor') }}">
+                    <button>Registrarte</button>
+                </a>
+
+                <p>¿Ya tienes una cuenta?</p>
+                <a href="{{ url_for('login') }}">
+                    <button>Iniciar sesión</button>
+                </a>
+            
+            
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Sentimat. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
